@@ -1,0 +1,36 @@
+.menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    svg {
+        width: 35px;
+        height: 35px;
+        color: white;
+    }
+}
+
+.szh-menu {
+    background-color: rgb(255, 255, 255);
+    width: 100vh !important;
+    height: 100vh;
+    z-index: 50;
+    &-container {
+        ul {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                color: #706e6a;
+                li {
+                    font-family: "Noto Sans Armenian", sans-serif;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    border-bottom: 1px solid #e8e7e7;
+                    text-align: start;
+                    padding: 25px 0;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}

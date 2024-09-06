@@ -1,0 +1,160 @@
+.admission{
+    &-slide {
+        height: 100vh;
+        background-image: url("https://t4.ftcdn.net/jpg/04/31/67/23/360_F_431672384_lvTzMUjvsaID7i2ToZaa1L9WEW8kk1lM.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            position: absolute;
+            bottom: 20%;
+            right: 10%;
+            font-size: 3.9rem;
+            font-family: "Noto Sans Armenian", sans-serif;
+            font-weight: 500;
+            -webkit-animation-duration: .5s; 
+            animation-duration: 1.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            animation-name: banner3header;
+            animation-delay: 1.5s;
+        }
+    }
+    &-section {
+        max-width: 1500px;
+        margin: auto;
+        border: 4px solid rgb(19, 19, 50);
+        margin-top: 2.5rem;
+        width: 80%;
+        border-radius: 20px !important;
+        overflow: hidden !important;
+        font-family: "Montserrat", sans-serif;
+        &-heading {
+            background-color: rgb(19, 19, 50);
+            --tw-text-opacity: 1;
+             color: rgb(255 255 255 / var(--tw-text-opacity));
+             text-align: center;
+             padding: 2.5rem;
+             h1 {
+                letter-spacing: 0.2rem;
+                 font-weight: 200 !important;
+             }
+        }
+        &-main {
+            padding: 2.5rem;
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
+    }
+    &-doc {
+        max-width: 1500px;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        font-family: "Playfair Display", serif;
+        margin: auto;
+        h2 {
+            font-size: 4rem !important;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            color: rgb(19, 19, 50);
+        }
+        svg {
+            color: rgb(19, 19, 50);
+            width: 45%;
+            height: 45%;
+        }
+        
+        &-1, &-2{
+            display: flex;
+            gap: 5rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 24rem;
+                padding: 4rem;
+                border-radius: 1.5rem;
+                gap: 2.5rem;
+                text-align: center;
+                color: rgb(19, 19, 50);
+                --tw-shadow: 0 20px 25px -5px rgba(9, 33, 85, 0.5), 0 8px 10px -6px rgba(9, 33, 85, 0.3);
+                --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color, rgba(9, 33, 85, 0.5)), 0 8px 10px -6px var(--tw-shadow-color, rgba(9, 33, 85, 0.3));
+                box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+                h3 {
+                    font-size: 1.875rem;
+                    line-height: 2.25rem;
+                    letter-spacing: 0.1rem;
+                    font-weight: 200;
+                }
+                span {
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                }
+            }
+        }
+        &-1 {
+            border-top: rgb(19, 19, 50) 3px solid;
+            padding-top: 2rem;
+        }
+        &-2 {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .admission{
+        &-slide {
+            height: 35vh;
+            h1 {
+                font-size: 1.5rem !important;
+            }
+        }
+        &-section {
+            width: 90% !important;
+            &-heading {
+                padding: 1.2rem;
+            }
+            &-main {
+                padding: 1rem;
+            }
+            span {
+                font-size: 1rem;
+                line-height: 0 !important;
+            }
+
+        }
+        &-doc {
+            h2 {
+                font-size: 1.8rem !important;
+                text-align: center;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 1000;
+                color: rgb(19, 19, 50);
+            }
+            &-1, &-2{
+                display: flex;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                padding: 0 0px !important;
+                div {
+                    width: 350px;
+                    h3 {
+                        font-size: 1.5rem !important;
+                    }
+                }
+            }
+        }
+    }
+}

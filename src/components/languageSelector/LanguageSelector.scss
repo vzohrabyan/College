@@ -1,0 +1,15 @@
+select {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+option {
+    color: darkblue;
+}
+select::selection {
+    border: none;
+    color: aliceblue !important;
+}

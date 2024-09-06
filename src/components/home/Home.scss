@@ -1,0 +1,67 @@
+.homePage { 
+    .collegeSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+        background: linear-gradient(to bottom, rgba(5, 10, 40, 0.9), rgba(15, 30, 70, 0.8), rgba(10, 25, 60, 0.7));
+        div {
+            padding: 5.5rem 0;
+            margin: 0px 3.4rem;
+            max-width: 102.4rem;
+            text-align: center;
+            animation-name: collegeSection;
+            animation-duration: 3s;
+            transform: translate3d(0%, 0%, 0);
+            p {
+                font-size: 1.2rem;
+                margin-bottom: 2.4rem;
+                font-family: "Playfair Display", serif;
+                font-weight: 400;
+                letter-spacing: 1.8px;
+                line-height: 120%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .collegeSection {
+            p {
+                font-size: 0.8rem !important;
+                margin-bottom: 0.4rem !important;
+                font-family: "Playfair Display", serif !important;
+                font-weight: 400 !important;
+                letter-spacing: 0.6px !important;
+                line-height: 120% !important;        
+            }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .collegeSection {
+        div {
+            padding: 3rem 0.1rem !important;
+            margin: 0 0.4rem !important;
+        }
+            p {
+                margin: 0 !important;
+                font-size: 0.6rem !important;
+                font-family: "Playfair Display", serif !important;
+                font-weight: 400 !important;
+                letter-spacing: 0.6px !important;
+                line-height: 120% !important;  
+            }
+    }
+}
+
+@keyframes  collegeSection {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
