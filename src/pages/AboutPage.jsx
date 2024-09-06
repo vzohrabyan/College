@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import About from "../components/about/About";
 import Layout from "../layout/Layout";
 
