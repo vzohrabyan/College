@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import { useTranslation } from 'react-i18next';
 import ProfessionsSection from './professionsSection/ProfessionsSection.jsx';
 import AnimationSliders from './animationSlider/AnimationSliders.jsx'
-import "./Home.scss"
+import "./Home.scss";
+
 const Home = () => {
   const {t} = useTranslation();
   useEffect(() => {
