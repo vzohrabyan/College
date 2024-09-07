@@ -1,5 +1,5 @@
-import Footer from '../components/footer/Footer'
-import Header from '../components/header/Header'
+import Footer from '../components/footer/Footer';
+import Header from '../components/header/Header';
 
 const Layout = ({ children }) => {
   return (
@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

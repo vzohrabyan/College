@@ -1,5 +1,5 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
 import translationsInEng from '../locales/en/translation.json';
 import translationsInRussian from '../locales/ru/translation.json';
@@ -15,21 +15,19 @@ const resources = {
   },
   am: {
     translation: translationsInArmenian
-  },
+  }
 };
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources, 
-    lng: "am", 
-    debug: true,
-    fallbackLng: "en", 
-    interpolation: {
-      escapeValue: false
-    },
-    ns: "translation", 
-    defaultNS: "translation"
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  lng: 'am',
+  debug: true,
+  fallbackLng: 'en',
+  interpolation: {
+    escapeValue: false
+  },
+  ns: 'translation',
+  defaultNS: 'translation'
+});
 
 export default i18n;
