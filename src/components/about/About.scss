@@ -1,275 +1,337 @@
 .about {
-    padding-top: 90vh;
-    overflow: hidden; 
+  padding-top: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-pic {
+    // position: relative;
+    width: 100%;
+    img {
+      border-radius: 100%;
+      background-color: white;
+      position: absolute;
+      top: -100%;
+      animation-timing-function: ease-in-out;
+    }
+
+    .pic1 {
+      width: 18rem;
+      left: 75%;
+      animation: slideDown1 4s forwards;
+    }
+
+    .pic2 {
+      width: 10rem;
+      left: 59%;
+      animation: slideDown2 6s forwards;
+    }
+
+    .pic3 {
+      width: 15rem;
+      left: 10%;
+      animation: slideDown3 5s forwards;
+    }
+
+    .pic4 {
+      width: 20rem;
+      left: 43%;
+      transform: translateX(-50%);
+      animation: slideDown4 7s forwards;
+    }
+  }
+
+  &-main {
+    max-width: 1500px;
+    position: relative;
+    z-index: 1;
+    margin: 5rem 0;
+    border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &-pic {
-        // position: relative; 
-        width: 100%;
-        img {
-            border-radius: 100%;
-            background-color: white;
-            position: absolute; 
-            top: -100%; 
-            animation-timing-function: ease-in-out;
-        }
-
-        .pic1 {
-            width: 18rem;
-            left: 75%;
-            animation: slideDown1 4s forwards; 
-        }
-
-        .pic2 {
-            width: 10rem;
-            left: 59%;
-            animation: slideDown2 6s forwards;
-        }
-
-        .pic3 {
-            width: 15rem;
-            left: 10%;
-            animation: slideDown3 5s forwards;
-        }
-
-        .pic4 {
-            width: 20rem;
-            left: 43%; 
-            transform: translateX(-50%); 
-            animation: slideDown4 7s forwards;
-        }
+    border: rgb(19, 19, 50) solid 4px;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    h1 {
+      background-color: rgb(19, 19, 50);
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-align: center;
+      padding: 1.8rem;
+      letter-spacing: 0.2rem;
+      font-weight: 100 !important;
     }
-
-    &-main {
-        max-width: 1500px;
-        position: relative;
-        z-index: 1; 
-        margin: 5rem 0;
-        border-radius: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: rgb(19, 19, 50) solid 4px;
-        overflow: hidden;
-        font-family: "Montserrat", sans-serif;
-        h1 {
-            background-color: rgb(19, 19, 50);
-            width: 100%;
-            text-align: center;
-            color: white;
-            text-align: center;
-            padding: 1.8rem;
-            letter-spacing: 0.2rem;
-            font-weight: 100 !important;
-        }
-        span {
-            padding: 2rem;
-            font-size: 1.25rem;
-            line-height: 2rem;
-            color: rgb(19, 19, 50);
-        }
+    span {
+      padding: 2rem;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      color: rgb(19, 19, 50);
     }
+  }
 }
 
 @keyframes slideDown1 {
-    0% { top: -100%; }
-    100% { top: 24%; } 
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 24%;
+  }
 }
 
 @keyframes slideDown2 {
-    0% { top: -100%; }
-    100% { top: 35%; }
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 35%;
+  }
 }
 
 @keyframes slideDown3 {
-    0% { top: -100%; }
-    100% { top: 22%; }
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 22%;
+  }
 }
 
 @keyframes slideDown4 {
-    0% { top: -100%; }
-    100% { top: 25%; } 
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 25%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .pic1 {
-        width: 12rem !important;
-        left: 75%;
-        animation: slideDown1 4s forwards; 
-    }
+  .pic1 {
+    width: 12rem !important;
+    left: 75%;
+    animation: slideDown1 4s forwards;
+  }
 
-    .pic2 {
-        width: 10rem;
-        left: 59%;
-        animation: slideDown2 6s forwards;
-    }
+  .pic2 {
+    width: 10rem;
+    left: 59%;
+    animation: slideDown2 6s forwards;
+  }
 
-    .pic3 {
-        width: 15rem;
-        left: 1% !important;
-        animation: slideDown3 5s forwards;
-    }
+  .pic3 {
+    width: 15rem;
+    left: 1% !important;
+    animation: slideDown3 5s forwards;
+  }
 
-    .pic4 {
-        width: 14rem !important;
-        left: 40% !important; 
-        transform: translateX(-50%); 
-        animation: slideDown4 7s forwards;
+  .pic4 {
+    width: 14rem !important;
+    left: 40% !important;
+    transform: translateX(-50%);
+    animation: slideDown4 7s forwards;
+  }
+  @keyframes slideDown1 {
+    0% {
+      top: -100%;
     }
-    @keyframes slideDown1 {
-        0% { top: -100%; }
-        100% { top: 24%; } 
+    100% {
+      top: 24%;
     }
-    
-    @keyframes slideDown2 {
-        0% { top: -100%; }
-        100% { top: 35%; }
+  }
+
+  @keyframes slideDown2 {
+    0% {
+      top: -100%;
     }
-    
-    @keyframes slideDown3 {
-        0% { top: -100%; }
-        100% { top: 22%; }
+    100% {
+      top: 35%;
     }
-    
-    @keyframes slideDown4 {
-        0% { top: -100%; }
-        100% { top: 28%; } 
+  }
+
+  @keyframes slideDown3 {
+    0% {
+      top: -100%;
     }
+    100% {
+      top: 22%;
+    }
+  }
+
+  @keyframes slideDown4 {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 28%;
+    }
+  }
 }
-
 
 @media screen and (max-width: 650px) {
-    .about-main {
-        h1 {
-            font-size: 1.9rem !important;
-        }
+  .about-main {
+    h1 {
+      font-size: 1.9rem !important;
     }
-    .pic1 {
-        width: 12rem !important;
-        left: 65% !important;
-        animation: slideDown1 4s forwards; 
-    }
+  }
+  .pic1 {
+    width: 12rem !important;
+    left: 65% !important;
+    animation: slideDown1 4s forwards;
+  }
 
-    .pic2 {
-        width: 10rem;
-        left: 59%;
-        animation: slideDown2 6s forwards;
-    }
+  .pic2 {
+    width: 10rem;
+    left: 59%;
+    animation: slideDown2 6s forwards;
+  }
 
-    .pic3 {
-        width: 15rem;
-        left: 1% !important;
-        animation: slideDown3 5s forwards;
-    }
+  .pic3 {
+    width: 15rem;
+    left: 1% !important;
+    animation: slideDown3 5s forwards;
+  }
 
-    .pic4 {
-        width: 14rem !important;
-        left: 40% !important; 
-        transform: translateX(-50%); 
-        animation: slideDown4 7s forwards;
+  .pic4 {
+    width: 14rem !important;
+    left: 40% !important;
+    transform: translateX(-50%);
+    animation: slideDown4 7s forwards;
+  }
+  @keyframes slideDown1 {
+    0% {
+      top: -100%;
     }
-    @keyframes slideDown1 {
-        0% { top: -100%; }
-        100% { top: 20%; } 
+    100% {
+      top: 20%;
     }
-    
-    @keyframes slideDown2 {
-        0% { top: -100%; }
-        100% { top: 5%; }
+  }
+
+  @keyframes slideDown2 {
+    0% {
+      top: -100%;
     }
-    
-    @keyframes slideDown3 {
-        0% { top: -100%; }
-        100% { top: 22%; }
+    100% {
+      top: 5%;
     }
-    
-    @keyframes slideDown4 {
-        0% { top: -100%; }
-        100% { top: 10%; } 
+  }
+
+  @keyframes slideDown3 {
+    0% {
+      top: -100%;
     }
+    100% {
+      top: 22%;
+    }
+  }
+
+  @keyframes slideDown4 {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 10%;
+    }
+  }
 }
 
-
 @media screen and (max-width: 550px) {
-    .about {
-        padding-top: 70vh;
+  .about {
+    padding-top: 70vh;
+  }
+  .about-main {
+    margin: 0rem 0.1rem 3rem 0.1rem;
+    h1 {
+      font-size: 1.9rem !important;
+      animation: aboutHead 2s forwards;
     }
-    .about-main {
-        margin: 0rem 0.1rem 3rem 0.1rem;
-        h1 {
-            font-size: 1.9rem !important;
-            animation: aboutHead 2s forwards;
-        }
-        span {
-            font-size: 1.2rem !important;
-            padding: 1rem;
-            animation: aboutSpan 2s forwards;
-        }
+    span {
+      font-size: 1.2rem !important;
+      padding: 1rem;
+      animation: aboutSpan 2s forwards;
     }
-    .pic1 {
-        width: 7rem !important;
-        left: 65% !important;
-        animation: slideDown1 4s forwards; 
-    }
+  }
+  .pic1 {
+    width: 7rem !important;
+    left: 65% !important;
+    animation: slideDown1 4s forwards;
+  }
 
-    .pic2 {
-        width: 8rem !important;
-        left: 45% !important;
-        animation: slideDown2 6s forwards;
-    }
+  .pic2 {
+    width: 8rem !important;
+    left: 45% !important;
+    animation: slideDown2 6s forwards;
+  }
 
-    .pic3 {
-        width: 8rem !important;
-        left: 5% !important;
-        animation: slideDown3 5s forwards;
-    }
+  .pic3 {
+    width: 8rem !important;
+    left: 5% !important;
+    animation: slideDown3 5s forwards;
+  }
 
-    .pic4 {
-        width: 11rem !important;
-        left: 40% !important; 
-        transform: translateX(-50%); 
-        animation: slideDown4 7s forwards;
+  .pic4 {
+    width: 11rem !important;
+    left: 40% !important;
+    transform: translateX(-50%);
+    animation: slideDown4 7s forwards;
+  }
+  @keyframes aboutSpan {
+    from {
+      opacity: 0;
+      transform: translate3d(60%, 0, 0);
     }
-    @keyframes aboutSpan {
-        from {
-            opacity: 0;
-            transform: translate3d(60%, 0, 0);
-        }
-        to {
-            opacity: 1;
-            transform: translate3d(0, 0%, 0);
-        }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0%, 0);
     }
+  }
 
-    @keyframes aboutHead {
-        from {
-            opacity: 0;
-            transform: translate3d(-60%, 0, 0);
-        }
-        to {
-            opacity: 1;
-            transform: translate3d(0, 0%, 0);
-        }
+  @keyframes aboutHead {
+    from {
+      opacity: 0;
+      transform: translate3d(-60%, 0, 0);
     }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0%, 0);
+    }
+  }
 
-    @keyframes slideDown1 {
-        0% { top: -100%; }
-        100% { top: 12%; } 
+  @keyframes slideDown1 {
+    0% {
+      top: -100%;
     }
-    
-    @keyframes slideDown2 {
-        0% { top: -100%; }
-        100% { top: 4%; }
+    100% {
+      top: 12%;
     }
-    
-    @keyframes slideDown3 {
-        0% { top: -100%; }
-        100% { top: 9%; }
+  }
+
+  @keyframes slideDown2 {
+    0% {
+      top: -100%;
     }
-    
-    @keyframes slideDown4 {
-        0% { top: -100%; }
-        100% { top: 15%; } 
+    100% {
+      top: 4%;
     }
+  }
+
+  @keyframes slideDown3 {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 9%;
+    }
+  }
+
+  @keyframes slideDown4 {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 15%;
+    }
+  }
 }

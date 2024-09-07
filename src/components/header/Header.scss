@@ -1,388 +1,392 @@
 .initialHeader {
-    width: 100%;
-    height: 45vh !important;
-    padding: 0 30px;
-    transition-duration: 1s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, rgba(5, 10, 40, 0.9), rgba(15, 30, 70, 0.8), rgba(10, 25, 60, 0.7));
-    box-shadow: 
-        0px 30px 25px rgba(10, 20, 50, 0.8),
-        rgba(20, 40, 80, 0.85) 0px 30px 60px -12px inset,
-        rgba(15, 35, 70, 0.7) 0px 18px 36px -18px inset;
-    color: white;
-    position: absolute;
-    top: 0 !important;
-    z-index: 99;
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;  
-        .left {
-            animation-name: collegesNameLeft;
-            animation-duration: 2.5s;
-            transform: translate3d(0%, 0%, 0);
-            text-align: center;
-        }
-        .right {
-            animation-name: collegesNameRight;
-            animation-duration: 2.5s;
-            transform: translate3d(0%, 0%, 0);
-            text-align: center;
-        }
-        .collegeName{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        img {
-            size: initial;
-            height: 30vh;
-            margin: 0 15px;
-            animation-name: logoAnimation;
-            animation-duration: 2s;
-        }
-    }
-    nav {
-        animation-name: header;
-        animation-duration: 2.5s;
-        transform: translate3d(0, 20%, 0);
-        a {
-            color: #fff;
-        }
-        li {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            .line {
-                position: absolute;
-            }
-        }
-        li:hover {
-            .line {
-                width: 100%;
-                height: 2.5px;
-                bottom: 0;
-                animation-name: line;
-                animation-duration: 0.5s;
-                background-color: white;
-            }
-        }
-    }
-    select {
-        position: absolute !important;
-        top: 15px;
-        right: 4%;
-    }
-}
-
-.fixedHeader {
-    transition-duration: 1s;
+  width: 100%;
+  height: 45vh !important;
+  padding: 0 30px;
+  transition-duration: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 10, 40, 0.9),
+    rgba(15, 30, 70, 0.8),
+    rgba(10, 25, 60, 0.7)
+  );
+  box-shadow:
+    0px 30px 25px rgba(10, 20, 50, 0.8),
+    rgba(20, 40, 80, 0.85) 0px 30px 60px -12px inset,
+    rgba(15, 35, 70, 0.7) 0px 18px 36px -18px inset;
+  color: white;
+  position: absolute;
+  top: 0 !important;
+  z-index: 99;
+  div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
-    position: fixed !important;
-    z-index: 99;
-    width: 100%;
-    height: 70px;
-    padding: 0 20px;
-    top: 0;
-    h1 {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 300;
-        font-size: 42px;
+    .left {
+      animation-name: collegesNameLeft;
+      animation-duration: 2.5s;
+      transform: translate3d(0%, 0%, 0);
+      text-align: center;
     }
-    div {
-        display: flex;
-        align-items: center;
-        img {
-            width: 60px;
-            height: 60px;
-        }
-        .left {
-            display: none;    
-        }
-        .right {
-            h1 {
-                font-size: 25px;
-                padding-left: 15px;
-            }
-            h2 {
-                display: none;
-            }
-        }
+    .right {
+      animation-name: collegesNameRight;
+      animation-duration: 2.5s;
+      transform: translate3d(0%, 0%, 0);
+      text-align: center;
     }
-    nav {
-        padding: 0 !important;
-        height: 100%;
-        ul {
-            padding: 0 10px !important;
-            height: 100%;
-            a {
-                color: black;
-                // transform: translate3d(0, 20%, 0);
-            }
-            li {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-            }
-            li:hover {
-                .line {
-                    animation-name: fixedHeaderLine;
-                    animation-duration: 1s;
-                    transform: translate3d(0, 20.5px, 0);
-                    background-color: black;
-                    width: 100%;
-                    height: 1px;
-                }
-            }
-        }
+    .collegeName {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
-    select {
+    img {
+      size: initial;
+      height: 30vh;
+      margin: 0 15px;
+      animation-name: logoAnimation;
+      animation-duration: 2s;
+    }
+  }
+  nav {
+    animation-name: header;
+    animation-duration: 2.5s;
+    transform: translate3d(0, 20%, 0);
+    a {
+      color: #fff;
+    }
+    li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      .line {
+        position: absolute;
+      }
+    }
+    li:hover {
+      .line {
+        width: 100%;
+        height: 2.5px;
+        bottom: 0;
+        animation-name: line;
+        animation-duration: 0.5s;
+        background-color: white;
+      }
+    }
+  }
+  select {
+    position: absolute !important;
+    top: 15px;
+    right: 4%;
+  }
+}
+
+.fixedHeader {
+  transition-duration: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: fixed !important;
+  z-index: 99;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  top: 0;
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+    .left {
+      display: none;
+    }
+    .right {
+      h1 {
+        font-size: 25px;
+        padding-left: 15px;
+      }
+      h2 {
+        display: none;
+      }
+    }
+  }
+  nav {
+    padding: 0 !important;
+    height: 100%;
+    ul {
+      padding: 0 10px !important;
+      height: 100%;
+      a {
         color: black;
+        // transform: translate3d(0, 20%, 0);
+      }
+      li {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      li:hover {
+        .line {
+          animation-name: fixedHeaderLine;
+          animation-duration: 1s;
+          transform: translate3d(0, 20.5px, 0);
+          background-color: black;
+          width: 100%;
+          height: 1px;
+        }
+      }
     }
+  }
+  select {
+    color: black;
+  }
 }
 
 nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  font-family: 'Noto Sans Armenian', sans-serif;
+  ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
-    font-family: "Noto Sans Armenian", sans-serif;
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        list-style-type: none;
-        a{
-            text-decoration: none;
-        }
-        li {
-            padding: 10px;
-            cursor: pointer;
-            .line {
-                width: 100%;
-                height: 3px;
-                
-            }
-        }
+    gap: 20px;
+    list-style-type: none;
+    a {
+      text-decoration: none;
     }
+    li {
+      padding: 10px;
+      cursor: pointer;
+      .line {
+        width: 100%;
+        height: 3px;
+      }
+    }
+  }
 }
 
-@keyframes  header {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 20%, 0);
-    }
-} 
+@keyframes header {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 20%, 0);
+  }
+}
 
-@keyframes  collegesNameLeft {
-    from {
-        opacity: 0;
-        transform: translate3d(60%, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0%, 0);
-    }
-} 
-@keyframes  logoAnimation {
-    from {
-        opacity: 0;
-        transform: translate3d(0%, -100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0%, 0);
-    }
-} 
+@keyframes collegesNameLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(60%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0);
+  }
+}
+@keyframes logoAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(0%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0);
+  }
+}
 
-@keyframes  collegesNameRight {
-    from {
-        opacity: 0;
-        transform: translate3d(-60%, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0%, 0);
-    }
-} 
+@keyframes collegesNameRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-60%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0);
+  }
+}
 
-@keyframes  line {
-    from {
-        opacity: 0;
-        bottom: 20px;
-    }
-    to {
-        opacity: 1;
-        bottom: 0;
-    }
-}  
+@keyframes line {
+  from {
+    opacity: 0;
+    bottom: 20px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
 
 @media screen and (min-width: 950px) {
-    .initialHeader{
-        .szh-menu {
-            display: none !important;
-        }
+  .initialHeader {
+    .szh-menu {
+      display: none !important;
     }
+  }
 }
 
 @media screen and (max-width: 1350px) {
-    .fixedHeader {
-        height: auto;
-        padding: 10px 20px;
-        nav {
-            display: none;
-        }
-        .menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            svg {
-                width: 45px;
-                height: 45px;
-                color: black;
-            }
-        }
-        .szh-menu {
-            top: 29px !important;
-            left: -20px !important;
-        }
-        h1 {
-            font-size: 60px;
-            transform: translate3d(0, 0, 0);
-        }
+  .fixedHeader {
+    height: auto;
+    padding: 10px 20px;
+    nav {
+      display: none;
     }
-    
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 45px;
+        height: 45px;
+        color: black;
+      }
+    }
+    .szh-menu {
+      top: 29px !important;
+      left: -20px !important;
+    }
+    h1 {
+      font-size: 60px;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
 
 @media screen and (max-width: 950px) {
-    nav {
-        display: none;
+  nav {
+    display: none;
+  }
+  .initialHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh !important;
+    padding: 5px 20px;
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 35px;
+        height: 35px;
+        color: white;
+      }
     }
-    .initialHeader {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 30vh !important;
-        padding: 5px 20px;
-        .menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            svg {
-                width: 35px;
-                height: 35px;
-                color: white;
-            }
-        }
-        .szh-menu {
-            top: 15vh !important;
-            left: -20px !important;
-        }
-        div {
-            img {
-                width: 100px;
-                height: 100px;
-            }
-            .right, .left {
-                h1 {
-                    font-size: 1.1rem
-                }
-                h2 {
-                    font-size: 0.6rem;
-                }
-            }
-        }
+    .szh-menu {
+      top: 15vh !important;
+      left: -20px !important;
+    }
+    div {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .right,
+      .left {
         h1 {
-            font-size: 60px;
-            transform: translate3d(0, 0, 0);
+          font-size: 1.1rem;
         }
+        h2 {
+          font-size: 0.6rem;
+        }
+      }
     }
-    @keyframes  header {
-        from {
-            opacity: 0;
-            transform: translate3d(0, -100%, 0);
-        }
-        to {
-            opacity: 1;
-            transform: translate3d(0, 0%, 0);
-        }
+    h1 {
+      font-size: 60px;
+      transform: translate3d(0, 0, 0);
     }
+  }
+  @keyframes header {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0%, 0);
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
+  h1 {
+    font-size: 0.9rem !important;
+  }
+  .initialHeader {
+    height: 58px !important;
+    justify-content: left !important;
+    select {
+      top: 15px !important;
+    }
+    div {
+      margin-right: 20px;
+      img {
+        width: 45px !important;
+        height: 45px !important;
+      }
+      .left {
+        display: none;
+      }
+      h1 {
+        font-family: 'Noto Sans Armenian', sans-serif;
+        font-weight: 300;
+        font-size: 0.8rem !important;
+      }
+      h2 {
+        font-family: 'Noto Sans Armenian', sans-serif;
+        font-weight: 300;
+        font-size: 0.6rem !important;
+      }
+    }
+  }
+  .fixedHeader,
+  .initialHeader {
+    padding: 10px !important;
+  }
+  .fixedHeader {
     h1 {
-        font-size: 0.9rem !important;
+      font-size: 0.8rem !important;
+    }
+  }
+  .menu {
+    svg {
+      width: 25px !important;
+      height: 25px !important;
+      color: white;
+    }
+  }
 
+  .initialHeader {
+    .szh-menu {
+      top: 30px !important;
+      width: 47vh;
+      // left: -20px !important;
     }
-    .initialHeader {
-        height: 58px !important;
-        justify-content: left !important;
-        select {
-            top: 15px !important;
-        }
-        div {
-            margin-right: 20px;
-            img {
-                width: 45px !important;
-                height: 45px !important;
-            }
-            .left {
-                display: none;
-            }
-            h1 {
-                font-family: "Noto Sans Armenian", sans-serif;
-                font-weight: 300;
-                font-size: 0.8rem !important;
-            }
-            h2 {
-                font-family: "Noto Sans Armenian", sans-serif;
-                font-weight: 300;
-                font-size: 0.6rem !important;
-            }
-        }
-    }
-    .fixedHeader,.initialHeader {
-        padding: 10px !important;
-    }
-    .fixedHeader {
-        h1 {
-            font-size: 0.8rem !important;
-        }
-    }
-    .menu {
-        svg {
-            width: 25px !important;
-            height: 25px !important;
-            color: white;
-        }
-    }
-    
-    .initialHeader {
-        .szh-menu{
-            top: 30px !important;
-            width: 47vh;
-            // left: -20px !important;
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 2500px) {
-    .initialHeader {
-        height: 20vh !important;
-        img {
-            height: 10vh !important;
-        }
+  .initialHeader {
+    height: 20vh !important;
+    img {
+      height: 10vh !important;
     }
+  }
 }
