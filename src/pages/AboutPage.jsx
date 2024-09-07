@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <>
       <Seo
-        title="About SEBASTATSI MEDICAL COLLEGE sdfsdfsdf"
+        title="About A. SEBASTATSI MEDICAL COLLEGE, Ա․ ՍԵԲԱՍՏԱՑԻ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ"
         description="Founded in 2010, our medical college has quickly established itself as a hub of excellence in medical education"
         canonical="/About"
       />
