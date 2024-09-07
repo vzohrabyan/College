@@ -7,7 +7,7 @@ const ProfessionsPage = () => {
   return (
     <>
       <Seo
-        title="Professions in A. SEBASTATSI MEDICAL COLLEGE, Ա․ ՍԵԲԱՍՏԱՑԻ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ"
+        title="Professions in A. SEBASTATSI MEDICAL COLLEGE, Ա․ ՍԵԲԱՍՏԱՑԻ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ, Ա. ՍԵԲԱՍՏԱՑՈՒ ԱՆՎԱՆ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ"
         description="Professions of SEBASTATSI MEDICAL COLLEGE The Faculty of Obstetrics, Nursing, Designer, Accounting, Dental Technology, Pharmacy"
         canonical="/Professions"
       />

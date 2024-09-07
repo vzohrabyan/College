@@ -7,7 +7,7 @@ const AdmissionPage = () => {
   return (
     <>
       <Seo
-        title="Admission procedure"
+        title="Admission procedure, Ա․ ՍԵԲԱՍՏԱՑԻ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ, Ա. ՍԵԲԱՍՏԱՑՈՒ ԱՆՎԱՆ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ"
         description="The following documents must be submitted for admission 9th grade certificate or 12th grade certificate (original), ID and social card (copy),8 3x4 size photographs"
         canonical="/Admission"
       />
