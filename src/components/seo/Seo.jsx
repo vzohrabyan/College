@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const Seo = ({
-  title = 'mdkamskl',
+  title = '',
   description,
   name = 'Vardan Zohrabyan',
   type = 'article',
@@ -11,8 +11,8 @@ const Seo = ({
   return (
     <Helmet>
       <title>
-        ԼԵՎՈՆ ՕՐԲԵԼՈՒ ԱՆՎԱՆ ՀԱՄԱԼՍԱՐԱՆԻ ԲԱԶԱՅԻ ՎՐԱ Ա. ՍԵԲԱՍՏԱՑՈՒ ԱՆՎԱՆ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ
-        ԿՐԹԱԿԱՆ ՀԻՄՆԱԴՐԱՄ {title}
+        ԼԵՎՈՆ ՕՐԲԵԼՈՒ ԱՆՎԱՆ ՀԱՄԱԼՍԱՐԱՆԻ ԲԱԶԱՅԻ ՎՐԱ Ա. ՍԵԲԱՍՏԱՑՈՒ ԱՆՎԱՆ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ ԿՐԹԱԿԱՆ
+        ՀԻՄՆԱԴՐԱՄ {title}
       </title>
       <meta name="description" content={`${description}`} />
       <link rel="canonical" href={`https://college-sebastaci.vercel.app/${canonical}`} />
