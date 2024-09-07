@@ -10,8 +10,11 @@ const Seo = ({
 }) => {
   return (
     <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
+      <title>
+        ԼԵՎՈՆ ՕՐԲԵԼՈՒ ԱՆՎԱՆ ՀԱՄԱԼՍԱՐԱՆԻ ԲԱԶԱՅԻ ՎՐԱ &laquo;Ա. ՍԵԲԱՍՏԱՑՈՒ ԱՆՎԱՆ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ&raquo;
+        ԿՐԹԱԿԱՆ ՀԻՄՆԱԴՐԱՄ {title}
+      </title>
+      <meta name="description" content={`${description}`} />
       <link rel="canonical" href={`https://college-sebastaci.vercel.app/${canonical}`} />
       <meta
         name="keywords"
