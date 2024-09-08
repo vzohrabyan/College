@@ -1,7 +1,7 @@
 .admission {
   &-slide {
     height: 100vh;
-    background-image: url('https://t4.ftcdn.net/jpg/04/31/67/23/360_F_431672384_lvTzMUjvsaID7i2ToZaa1L9WEW8kk1lM.jpg');
+    background-image: url('https://s26162.pcdn.co/wp-content/uploads/2022/05/Flying-books.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10,12 +10,13 @@
     flex-direction: column;
     align-items: center;
     h1 {
+      color: white;
       position: absolute;
       bottom: 20%;
       right: 10%;
-      font-size: 3.9rem;
+      font-size: 4.9rem;
       font-family: 'Noto Sans Armenian', sans-serif;
-      font-weight: 500;
+      font-weight: 200;
       -webkit-animation-duration: 0.5s;
       animation-duration: 1.5s;
       -webkit-animation-fill-mode: both;
@@ -124,6 +125,7 @@
       height: 35vh;
       h1 {
         font-size: 1.5rem !important;
+        right: 5%;
       }
     }
     &-section {

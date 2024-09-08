@@ -29,6 +29,7 @@ const Professions = () => {
   const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 750);
   const [expandedItems, setExpandedItems] = useState({});
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
