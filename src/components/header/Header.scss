@@ -50,6 +50,7 @@
       animation-duration: 2s;
     }
   }
+
   nav {
     animation-name: header;
     animation-duration: 2.5s;
@@ -99,6 +100,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 42px;
+    b {
+      font-weight: 300 !important;
+    }
   }
   div {
     display: flex;
@@ -330,16 +334,17 @@ nav {
     font-size: 0.9rem !important;
   }
   .initialHeader {
-    height: 58px !important;
+    height: 70px !important;
     justify-content: left !important;
+    transition-duration: 2s;
     select {
-      top: 15px !important;
+      top: 20px !important;
     }
     div {
       margin-right: 20px;
       img {
-        width: 45px !important;
-        height: 45px !important;
+        width: 55px !important;
+        height: 55px !important;
       }
       .left {
         display: none;
@@ -361,8 +366,68 @@ nav {
     padding: 10px !important;
   }
   .fixedHeader {
-    h1 {
-      font-size: 0.8rem !important;
+    transition-duration: 2s;
+    box-shadow: 0 4px 12px rgba(19, 19, 50, 0.8) !important;
+    select {
+      display: none !important;
+    }
+    .szh-menu {
+      top: 40px !important;
+    }
+    height: 80px;
+    background-color: rgb(19, 19, 50);
+    color: #fff;
+    justify-content: start !important;
+    svg {
+      color: #fff !important;
+      animation-name: menu;
+      animation-duration: 1s;
+    }
+    div {
+      width: 100%;
+      display: flex;
+      padding-right: 10px;
+      h2 {
+        display: none;
+      }
+      h1 {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between !important;
+        .rightHeading {
+          animation-name: collegesNameRight;
+          animation-duration: 2s;
+        }
+        .leftHeading {
+          animation-name: collegesNameLeft;
+          animation-duration: 2s;
+        }
+        b {
+          border-bottom: 1px solid white;
+          font-size: 0.9rem !important;
+          font-weight: 500 !important;
+        }
+      }
+    }
+    img {
+      position: absolute;
+      z-index: 99 !important;
+      top: 50%;
+      left: 40%;
+      width: 80px !important;
+      height: 80px !important;
+      animation-name: header;
+      animation-duration: 2s;
+    }
+  }
+  @keyframes menu {
+    from {
+      opacity: 0;
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
     }
   }
   .menu {
@@ -375,9 +440,19 @@ nav {
 
   .initialHeader {
     .szh-menu {
-      top: 30px !important;
+      top: 40px !important;
       width: 47vh;
-      // left: -20px !important;
+      select {
+        display: none !important;
+      }
+    }
+  }
+  .szh-menu {
+    select {
+      display: block !important;
+    }
+    select::selection {
+      color: rgb(21, 21, 65) !important;
     }
   }
 }

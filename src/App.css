@@ -29,15 +29,15 @@
 @media screen and (max-width: 800px) {
   #root::before {
     content: '';
-    position: fixed; /* Change to fixed for better mobile support */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100% !important;
     height: 100% !important;
     background: url('../src/assets/pictures/image1.jpeg') no-repeat center center !important;
-    background-attachment: fixed; /* Ensure the image is fixed */
-    background-size: 90% !important; /* Cover the entire area */
-    opacity: 0.4; /* Adjust this value to set the desired opacity */
+    background-attachment: fixed; 
+    background-size: 90% !important; 
+    opacity: 0.4; 
     z-index: -1;
   }
 }

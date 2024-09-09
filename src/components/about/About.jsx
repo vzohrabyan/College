@@ -20,7 +20,11 @@ const About = () => {
       </div>
       <div className="about-main">
         <h1>{t('About')}</h1>
-        <span>{t('AboutUsMain')}</span>
+        <span
+          dangerouslySetInnerHTML={{
+            __html: t('AboutUsMain')
+          }}
+        />
       </div>
     </main>
   );

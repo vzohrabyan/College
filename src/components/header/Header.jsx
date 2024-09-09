@@ -36,14 +36,27 @@ const Header = () => {
           <h1>Ա․ ՍԵԲԱՍՏԱՑԻ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ</h1>
           <h2>ԿՐԹԱԿԱՆ ՀԻՄՆԱԴՐԱՄ</h2>
         </div>
-        <img src={logo} alt="Logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
         <div className="collegeName right">
           <h1>
-            {headerRef.current
-              ? headerRef.current.className == 'initialHeader'
-                ? 'A. SEBASTATSI MEDICAL COLLEGE'
-                : t('College')
-              : 'A. SEBASTATSI MEDICAL COLLEGE'}
+            {headerRef.current ? (
+              headerRef.current.className == 'initialHeader' ? (
+                'A. SEBASTATSI MEDICAL COLLEGE'
+              ) : (
+                <>
+                  <b className="leftHeading">
+                    {t('College').split(' ')[0] + ' ' + t('College').split(' ')[1]}
+                  </b>{' '}
+                  <b className="rightHeading">
+                    {t('College').split(' ')[2] + ' ' + t('College').split(' ')[3]}
+                  </b>
+                </>
+              )
+            ) : (
+              'A. SEBASTATSI MEDICAL COLLEGE'
+            )}
           </h1>
           <h2>EDUCATION FOUNDATION</h2>
         </div>

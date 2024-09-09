@@ -1,0 +1,80 @@
+.Questionscontainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0.5rem !important;
+  background-color: rgb(222, 226, 245);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  gap: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+  h1 {
+    color: rgb(19, 19, 50);
+    font-weight: 100;
+    letter-spacing: 0.4rem;
+    font-size: 4rem;
+  }
+  
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  .field {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input[type='email'],
+  textarea {
+    padding: 0.5rem !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    max-width: 760px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  button {
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+    .Questionscontainer{    
+        h1 {
+            font-size: 2rem !important;
+        }
+    }
+}

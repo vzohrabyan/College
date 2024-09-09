@@ -240,6 +240,7 @@
 @media screen and (max-width: 550px) {
   .about {
     padding-top: 70vh;
+    background-color: white;
   }
   .about-main {
     margin: 0rem 0.1rem 3rem 0.1rem;
@@ -256,26 +257,26 @@
   .pic1 {
     width: 7rem !important;
     left: 65% !important;
-    animation: slideDown1 4s forwards;
+    animation: slideDown1 5s forwards !important;
   }
 
   .pic2 {
     width: 8rem !important;
     left: 45% !important;
-    animation: slideDown2 6s forwards;
+    animation: slideDown2 3s forwards !important;
   }
 
   .pic3 {
     width: 8rem !important;
     left: 5% !important;
-    animation: slideDown3 5s forwards;
+    animation: slideDown3 4s forwards !important;
   }
 
   .pic4 {
     width: 11rem !important;
     left: 40% !important;
     transform: translateX(-50%);
-    animation: slideDown4 7s forwards;
+    animation: slideDown4 2s forwards !important;
   }
   @keyframes aboutSpan {
     from {
@@ -304,7 +305,7 @@
       top: -100%;
     }
     100% {
-      top: 12%;
+      top: 7.5%;
     }
   }
 
@@ -322,7 +323,7 @@
       top: -100%;
     }
     100% {
-      top: 9%;
+      top: 4%;
     }
   }
 
@@ -331,7 +332,7 @@
       top: -100%;
     }
     100% {
-      top: 15%;
+      top: 8%;
     }
   }
 }
