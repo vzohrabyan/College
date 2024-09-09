@@ -5,13 +5,13 @@ import { TbCertificate } from 'react-icons/tb';
 import { TbCurrencyDram } from 'react-icons/tb';
 import { BsPersonSquare } from 'react-icons/bs';
 import './Admission.scss';
-
+import AdmissionForm from './admissionForm/AdmissionForm';
 const Admission = () => {
   const { t } = useTranslation();
 
   return (
     <main className="admission">
-      <div className="admission-slide">
+      <div className="admission-slide" >
         <h1>{t('Admission')}</h1>
       </div>
       <div className="admission-section">
@@ -49,6 +49,7 @@ const Admission = () => {
           </div>
         </div>
       </div>
+      <AdmissionForm />
     </main>
   );
 };

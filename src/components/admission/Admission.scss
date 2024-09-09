@@ -1,7 +1,7 @@
 .admission {
   &-slide {
     height: 100vh;
-    background-image: url('https://s26162.pcdn.co/wp-content/uploads/2022/05/Flying-books.jpg');
+    background-image: url("../../assets/pictures/slidesPic/Flying-books.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -122,7 +122,7 @@
 @media screen and (max-width: 800px) {
   .admission {
     &-slide {
-      height: 35vh;
+      height: 65vh;
       h1 {
         font-size: 1.5rem !important;
         right: 5%;
@@ -158,11 +158,20 @@
         padding: 0 0px !important;
         div {
           width: 350px;
+          background-color: white;
           h3 {
             font-size: 1.5rem !important;
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .admission {
+    &-slide {
+      height: 50vh;
     }
   }
 }

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import ProfessionsSection from './professionsSection/ProfessionsSection.jsx';
 import AnimationSliders from './animationSlider/AnimationSliders.jsx';
 import './Home.scss';
+import QuestionsForm from './questionsForm/QuestionsForm.jsx';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ const Home = () => {
         </div>
       </section>
       <ProfessionsSection />
+      <QuestionsForm />
     </main>
   );
 };

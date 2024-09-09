@@ -4,6 +4,7 @@ import { IoIosMenu, IoIosClose } from 'react-icons/io';
 import './Menu.scss';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import LanguageSelector from '../../languageSelector/LanguageSelector';
 
 const MenuBar = () => {
   const { t } = useTranslation();
@@ -44,6 +45,7 @@ const MenuBar = () => {
       <Link to="/About">
         <MenuItem>{t('About')}</MenuItem>
       </Link>
+      <LanguageSelector className="langSelectorMenu" />
     </Menu>
   );
 };

@@ -11,10 +11,19 @@
 }
 
 .szh-menu {
-  background-color: rgb(255, 255, 255);
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: rgb(255, 255, 255) !important;
   width: 100vh !important;
   height: 100vh;
   z-index: 50;
+  select {
+    display: none;
+    color: rgb(21, 21, 65) !important;
+    position: absolute !important;
+    bottom: 22% !important;
+    right: 55% !important;
+  }
   &-container {
     ul {
       list-style-type: none;
@@ -34,3 +43,4 @@
     }
   }
 }
+
