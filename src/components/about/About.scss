@@ -24,13 +24,13 @@
     .pic2 {
       width: 10rem;
       left: 59%;
-      animation: slideDown2 6s forwards;
+      animation: slideDown2 2s forwards;
     }
 
     .pic3 {
       width: 15rem;
       left: 10%;
-      animation: slideDown3 5s forwards;
+      animation: slideDown3 3s forwards;
     }
 
     .pic4 {
@@ -77,7 +77,7 @@
     top: -100%;
   }
   100% {
-    top: 24%;
+    top: 19%;
   }
 }
 
@@ -86,7 +86,7 @@
     top: -100%;
   }
   100% {
-    top: 35%;
+    top: 18%;
   }
 }
 
@@ -104,13 +104,13 @@
     top: -100%;
   }
   100% {
-    top: 25%;
+    top: 17%;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .about {
-    padding-top: 50vh !important;
+    padding-top: 80vh !important;
   }
   .pic1 {
     width: 12rem !important;
@@ -173,7 +173,7 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .about-main {
     h1 {
       font-size: 1.9rem !important;
@@ -187,7 +187,7 @@
 
   .pic2 {
     width: 10rem;
-    left: 59%;
+    left: 40% !important;
     animation: slideDown2 6s forwards;
   }
 
@@ -199,7 +199,7 @@
 
   .pic4 {
     width: 14rem !important;
-    left: 40% !important;
+    left: 45% !important;
     transform: translateX(-50%);
     animation: slideDown4 7s forwards;
   }
@@ -208,7 +208,7 @@
       top: -100%;
     }
     100% {
-      top: 20%;
+      top: 12%;
     }
   }
 
@@ -217,7 +217,7 @@
       top: -100%;
     }
     100% {
-      top: 5%;
+      top: 7%;
     }
   }
 
@@ -226,7 +226,7 @@
       top: -100%;
     }
     100% {
-      top: 22%;
+      top: 8%;
     }
   }
 
@@ -235,7 +235,7 @@
       top: -100%;
     }
     100% {
-      top: 10%;
+      top: 13%;
     }
   }
 }
@@ -249,7 +249,7 @@
     margin: 0rem 0.1rem 3rem 0.1rem;
     h1 {
       font-size: 1.9rem !important;
-      animation: aboutHead 2s forwards;
+      animation: aboutHead 4s forwards;
     }
     span {
       font-size: 1.2rem !important;
