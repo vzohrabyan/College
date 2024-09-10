@@ -12,7 +12,6 @@ const Header = () => {
   const { i18n } = useTranslation();
 
   const currentLanguage = i18n.language;
-  console.log(currentLanguage);
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;

@@ -3,6 +3,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import './AdmissionForm.scss'; // Import the SCSS file
 import { useTranslation } from 'react-i18next';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AdmissionForm = () => {
   const { t } = useTranslation();
@@ -27,12 +29,42 @@ const AdmissionForm = () => {
     faculty: t('nursing')
   };
 
-  const handleSubmit = (values) => {
-    console.log(values);
+  const notify = (message, type = 'success') =>
+    toast(message, {
+      type
+    });
+
+  const handleSubmit = async (values) => {
+    try {
+      const formData = new FormData();
+
+      for (const key of Object.keys(values)) {
+        formData.append(key, values[key]);
+      }
+
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/send-mail`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${process.env.REACT_APP_TOKEN}`
+        },
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+       return notify(result.message, 'error');
+      }
+
+      notify(result.message);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (
     <div className="admission-form-container">
+      <ToastContainer className="toast-position" />
       <h1>{t('AdmissionForm')}</h1>
       <span>{t('OnlineAdmission')}</span>
       <Formik
