@@ -17,7 +17,7 @@
     justify-content: space-around;
     gap: 10px;
     .profession {
-      position: relative; /* Ensure the pseudo-element positions correctly */
+      position: relative;
       width: 24%;
       padding: 5rem 2rem;
       display: flex;
@@ -25,7 +25,7 @@
       align-items: center;
       justify-content: space-between;
       border-radius: 2rem;
-      background-color: #cccccc9c;
+      background-color: #cccccc;
       gap: 20px;
       img {
         animation-name: professionPic;
@@ -61,7 +61,7 @@
           animation-duration: 2.6s;
         }
       }
-      /* Pseudo-element for background image with opacity */
+
       &::before {
         content: '';
         position: absolute;
@@ -129,9 +129,9 @@
   }
 
   .profession {
-    width: 80% !important;
+    width: 90% !important;
     h4 {
-      font-size: 1.2rem !important;
+      font-size: 1.7rem !important;
     }
   }
 }
