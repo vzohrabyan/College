@@ -12,7 +12,7 @@ const AdmissionForm = () => {
     name: Yup.string().required(t('Required')),
     phone: Yup.string()
       .matches(
-        /^\+374(10|11|33|41|43|44|46|55|77|91|93|94|95|96|98|99)\d{6}$/,
+        /^\+374(10|11|33|41|43|44|46|55|77|91|93|94|95|96|97|98|99)\d{6}$/,
         t('Invalid phone number')
       )
       .required(t('Required')),
