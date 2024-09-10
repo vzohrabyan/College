@@ -15,7 +15,7 @@ const AnimationSliders = () => {
     {
       id: 1,
       image: ProfessionsPic,
-      type: 'Profession'
+      type: 'Professions'
     },
     {
       id: 2,

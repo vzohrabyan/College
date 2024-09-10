@@ -28,7 +28,7 @@ const AdmissionForm = () => {
   };
 
   const handleSubmit = (values) => {
-    console.log(values);
+    
   };
 
   return (

@@ -37,7 +37,7 @@ const MenuBar = () => {
         <MenuItem>{t('Home')}</MenuItem>
       </Link>
       <Link to="/Professions">
-        <MenuItem>{t('Profession')}</MenuItem>
+        <MenuItem>{t('Professions')}</MenuItem>
       </Link>
       <Link to="/Admission">
         <MenuItem>{t('Admission')}</MenuItem>

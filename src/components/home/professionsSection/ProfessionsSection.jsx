@@ -45,7 +45,7 @@ const ProfessionsSection = () => {
 
   return (
     <section className="professionsSection">
-      <h1>{t('Profession')}</h1>
+      <h1>{t('Professions')}</h1>
       <div className="professions">
         {professionsData.map(({ id, name, image }) => {
           return (

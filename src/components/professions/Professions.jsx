@@ -19,7 +19,6 @@ const truncateHtml = (html, maxLength) => {
     return html;
   }
 
-  const truncatedText = textContent.slice(0, maxLength);
   const truncatedHtml = doc.body.innerHTML.slice(0, maxLength);
 
   return truncatedHtml + '...';
@@ -65,7 +64,7 @@ const Professions = () => {
   return (
     <main className="professions">
       <div className="professions-slide">
-        <h1>{t('Profession')}</h1>
+        <h1>{t('Professions')}</h1>
       </div>
       <div className="professions-descriptions">
         {professionsDescData.map(({ id, name, image, description }) => {
