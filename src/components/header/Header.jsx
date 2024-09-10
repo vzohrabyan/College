@@ -9,7 +9,10 @@ const Header = () => {
   const headerRef = useRef(null);
   const [prevScrollY, setPrevScrollY] = useState(0);
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
 
+  const currentLanguage = i18n.language;
+  console.log(currentLanguage);
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -46,10 +49,24 @@ const Header = () => {
                 'A. SEBASTATSI MEDICAL COLLEGE'
               ) : (
                 <>
-                  <b className="leftHeading">
-                    {t('College').split(' ')[0] + ' ' + t('College').split(' ')[1]}
+                  <b
+                    className={
+                      currentLanguage === 'am'
+                        ? 'leftHeading leftHeadingam'
+                        : currentLanguage === 'ru'
+                          ? 'leftHeading leftHeadingru'
+                          : 'leftHeading leftHeadingen'
+                    }>
+                    {t('College').split(' ')[0] + ' ' + t('College').split(' ')[1] + ' '}
                   </b>{' '}
-                  <b className="rightHeading">
+                  <b
+                    className={
+                      currentLanguage === 'am'
+                        ? 'rightHeading rightHeadingam'
+                        : currentLanguage === 'ru'
+                          ? 'rightHeading rightHeadingru'
+                          : 'rightHeading rightHeadingen'
+                    }>
                     {t('College').split(' ')[2] + ' ' + t('College').split(' ')[3]}
                   </b>
                 </>

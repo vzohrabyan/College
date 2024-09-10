@@ -334,7 +334,7 @@ nav {
     font-size: 0.9rem !important;
   }
   .initialHeader {
-    height: 70px !important;
+    height: 80px !important;
     justify-content: left !important;
     transition-duration: 2s;
     select {
@@ -388,7 +388,7 @@ nav {
       display: flex;
       padding-right: 10px;
       h2 {
-        display: none;
+        display: none !important;
       }
       h1 {
         width: 100%;
@@ -397,15 +397,24 @@ nav {
         .rightHeading {
           animation-name: collegesNameRight;
           animation-duration: 2s;
+          display: flex;
+          justify-content: end;
         }
         .leftHeading {
           animation-name: collegesNameLeft;
           animation-duration: 2s;
         }
         b {
+          text-align: center;
           border-bottom: 1px solid white;
           font-size: 0.9rem !important;
           font-weight: 500 !important;
+        }
+        .rightHeadingru {
+          margin-right: 15px !important;
+        }
+        .leftHeadingen {
+          margin-left: 15px !important;
         }
       }
     }

@@ -11,7 +11,10 @@ const AdmissionForm = () => {
     email: Yup.string().email(t('Invalid email address')).required(t('Required')),
     name: Yup.string().required(t('Required')),
     phone: Yup.string()
-      .matches(/^\+?[1-9]\d{1,10}$/, t('Invalid phone number'))
+      .matches(
+        /^\+374(10|11|33|41|43|44|46|55|77|91|93|94|95|96|98|99)\d{6}$/,
+        t('Invalid phone number')
+      )
       .required(t('Required')),
     file: Yup.mixed().required(t('A file is required'))
   });
@@ -21,7 +24,7 @@ const AdmissionForm = () => {
     name: '',
     phone: '',
     file: null,
-    faculty: t("nursing")
+    faculty: t('nursing')
   };
 
   const handleSubmit = (values) => {
@@ -30,7 +33,7 @@ const AdmissionForm = () => {
 
   return (
     <div className="admission-form-container">
-      <h1>{t('Admission')}</h1>
+      <h1>{t('AdmissionForm')}</h1>
       <span>{t('OnlineAdmission')}</span>
       <Formik
         initialValues={initialValues}
@@ -52,7 +55,7 @@ const AdmissionForm = () => {
 
             <div className="field">
               <label htmlFor="phone">{t('phone')}</label>
-              <Field id="phone" type="tel" name="phone" />
+              <Field id="phone" type="tel" name="phone" placeholder="+374XYXYXYXY" />
               <ErrorMessage name="phone" component="div" className="error" />
             </div>
 

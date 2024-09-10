@@ -109,6 +109,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .about {
+    padding-top: 50vh !important;
+  }
   .pic1 {
     width: 12rem !important;
     left: 75%;
@@ -117,12 +120,12 @@
 
   .pic2 {
     width: 10rem;
-    left: 59%;
+    left: 55% !important;
     animation: slideDown2 6s forwards;
   }
 
   .pic3 {
-    width: 15rem;
+    width: 12rem !important;
     left: 1% !important;
     animation: slideDown3 5s forwards;
   }
@@ -138,7 +141,7 @@
       top: -100%;
     }
     100% {
-      top: 24%;
+      top: 15%;
     }
   }
 
@@ -147,7 +150,7 @@
       top: -100%;
     }
     100% {
-      top: 35%;
+      top: 20%;
     }
   }
 
@@ -156,7 +159,7 @@
       top: -100%;
     }
     100% {
-      top: 22%;
+      top: 18%;
     }
   }
 
@@ -165,7 +168,7 @@
       top: -100%;
     }
     100% {
-      top: 28%;
+      top: 16%;
     }
   }
 }
@@ -239,7 +242,7 @@
 
 @media screen and (max-width: 550px) {
   .about {
-    padding-top: 70vh;
+    padding-top: 500px;
     background-color: white;
   }
   .about-main {
