@@ -46,5 +46,7 @@
   "Invalid Email Address": "Invalid Email Address",
   "File required": "File required",
   "Message": "Message",
-  "Questions": "Have questions?"
+  "Questions": "Have questions?",
+  "NotFound": "It seems that such a page was not found with us, return to the main page",
+  "main": "Main"
 }
