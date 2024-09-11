@@ -12,6 +12,7 @@ const Header = () => {
   const { i18n } = useTranslation();
 
   const currentLanguage = i18n.language;
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -87,7 +88,7 @@ const Header = () => {
           </Link>
           <Link to="/Professions">
             <li>
-              {t('Profession')}
+              {t('Professions')}
               <div className="line"></div>
             </li>
           </Link>

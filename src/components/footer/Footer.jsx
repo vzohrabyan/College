@@ -15,15 +15,14 @@ const Footer = () => {
   return (
     <footer id="fotter">
       <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d831.8704491736042!2d44.627173958623096!3d40.275114138769496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa1d1e8985a25%3A0xfe97313e5122a345!2s7JFG%2BWRH%2C%20Ogostosi%2023%20Street%2C%20Abovyan%202204!5e0!3m2!1sru!2sam!4v1725913800699!5m2!1sru!2sam"
-      width="600"
-      height="450"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="Google Map"
-    ></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12176.159739558849!2d44.6269976!3d40.2748631!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa1a31d899b5f%3A0x646e4cb7e23a44fc!2sA.%20Sebastatsi%20Medical%20College!5e0!3m2!1sru!2sam!4v1726008700153!5m2!1sru!2sam"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Google Map"></iframe>
       <div className="footer-container">
         <img src={logo} alt="" />
         <h1>{t('College')}</h1>

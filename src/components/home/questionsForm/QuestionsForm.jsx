@@ -18,7 +18,7 @@ const QuestionsForm = () => {
   };
 
   const handleSubmit = (values) => {
-    console.log(values);
+    
   };
 
   return (

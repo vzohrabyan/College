@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import './AdmissionForm.scss'; // Import the SCSS file
+import './AdmissionForm.scss'; 
 import { useTranslation } from 'react-i18next';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -28,6 +28,7 @@ const AdmissionForm = () => {
     file: null,
     faculty: t('nursing')
   };
+
 
   const notify = (message, type = 'success') =>
     toast(message, {
