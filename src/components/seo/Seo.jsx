@@ -12,7 +12,7 @@ const Seo = ({
     <Helmet>
       <title>Ա. ՍԵԲԱՍՏԱՑՈՒ ԱՆՎԱՆ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ ԿՐԹԱԿԱՆ ՀԻՄՆԱԴՐԱՄ {title}</title>
       <meta name="description" content={`${description}`} />
-      <link rel="canonical" href={`https://college-sebastaci.vercel.app/${canonical}`} />
+      <link rel="canonical" href={`https://www.sebastatsi.am/${canonical}`} />
       <meta
         name="keywords"
         content="Sebastatsi college, Medical college in Abovyan, college, medical, Abovyan, Yerevan"
