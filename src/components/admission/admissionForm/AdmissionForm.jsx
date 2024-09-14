@@ -1,7 +1,7 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Form, Field, ErrorMessage, useFormik, FormikProvider } from 'formik';
 import * as Yup from 'yup';
-import './AdmissionForm.scss'; 
+import './AdmissionForm.scss';
 import { useTranslation } from 'react-i18next';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -29,13 +29,7 @@ const AdmissionForm = () => {
     faculty: t('nursing')
   };
 
-
-  const notify = (message, type = 'success') =>
-    toast(message, {
-      type
-    });
-
-  const handleSubmit = async (values) => {
+  const handleSubmit = async (values, { setStatus }) => {
     try {
       const formData = new FormData();
 
@@ -54,25 +48,38 @@ const AdmissionForm = () => {
       const result = await response.json();
 
       if (!response.ok) {
-       return notify(result.message, 'error');
+        setStatus({ error: result.message });
+        return notify(result.message, 'error');
       }
 
-      notify(result.message);
+      setStatus({ success: result.message });
     } catch (e) {
+      setStatus({ error: e.message });
+      notify(e.message, 'error');
       console.log(e);
     }
   };
+
+  const formik = useFormik({
+    initialValues,
+    validationSchema,
+    onSubmit: handleSubmit
+  });
+
+  const { setFieldValue, isSubmitting, status } = formik;
+
+  const notify = (message, type = 'success') =>
+    toast(message, {
+      type
+    });
 
   return (
     <div className="admission-form-container">
       <ToastContainer className="toast-position" />
       <h1>{t('AdmissionForm')}</h1>
-      <span>{t('OnlineAdmission')}</span>
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}>
-        {({ setFieldValue, isSubmitting }) => (
+      <span>{status?.success ? t('successMessage') : t('OnlineAdmission')}</span>
+      {!status?.success && (
+        <FormikProvider value={formik}>
           <Form className="form">
             <div className="field">
               <label htmlFor="email">{t('email')}</label>
@@ -128,8 +135,8 @@ const AdmissionForm = () => {
               </button>
             </div>
           </Form>
-        )}
-      </Formik>
+        </FormikProvider>
+      )}
     </div>
   );
 };

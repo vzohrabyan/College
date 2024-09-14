@@ -2,6 +2,7 @@
   "College": "A. SEBASTATSI MEDICAL COLLEGE",
   "Profession": "Professions",
   "Admission": "Admission",
+  "AdmissionForm": "Apply Online",
   "Home": "Home",
   "About": "About Us",
   "Contact": "Contact with Us",
@@ -48,5 +49,6 @@
   "Message": "Message",
   "Questions": "Have questions?",
   "NotFound": "It seems that such a page was not found with us, return to the main page",
-  "main": "Main"
+  "main": "Main",
+  "successMessage": "Your application has been successfully submitted. We will contact you after reviewing your application."
 }
