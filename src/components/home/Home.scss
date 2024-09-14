@@ -44,11 +44,23 @@
       padding: 3rem 0.1rem !important;
       margin: 0 0.4rem !important;
     }
+    div::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      background: url('../../assets/icons/logo.png') no-repeat center center fixed;
+      background-size: 60%;
+      opacity: 0.4;
+      z-index: -1;
+    }
     p {
-      margin: 0 !important;
-      font-size: 0.6rem !important;
+      margin: 1rem 0 !important;
+      font-size: 0.9rem !important;
       font-family: 'Playfair Display', serif !important;
-      font-weight: 400 !important;
+      font-weight: 500 !important;
       letter-spacing: 0.6px !important;
       line-height: 120% !important;
     }

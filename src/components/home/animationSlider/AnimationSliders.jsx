@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import ProfessionsPic from '../../../assets/pictures/slidesPic/Professions.webp';
+import ProfessionsPic from '../../../assets/pictures/slidesPic/Professions.jpg';
 import AdmissionPic from '../../../assets/pictures/slidesPic/admission.jpg';
 const AnimationSliders = () => {
   const { t } = useTranslation();

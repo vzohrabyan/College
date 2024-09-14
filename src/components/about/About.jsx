@@ -6,6 +6,7 @@ import pic2 from '../../assets/pictures/aboutUs/Pic2.png';
 import pic3 from '../../assets/pictures/aboutUs/Pic3.png';
 import pic4 from '../../assets/pictures/aboutUs/Pic4.png';
 import { useTranslation } from 'react-i18next';
+import QuestionsForm from '../home/questionsForm/QuestionsForm';
 
 const About = () => {
   const { t } = useTranslation();
