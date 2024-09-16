@@ -1,15 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import nursing from '../../../assets/pictures/professionsIcons/nursing.png';
-import midwife from '../../../assets/pictures/professionsIcons/midwife.png';
-import pharmacy from '../../../assets/pictures/professionsIcons/pharmacy.png';
-import stom from '../../../assets/pictures/professionsIcons/stom.png';
-import designer from '../../../assets/pictures/professionsIcons/designer.png';
-import accountant from '../../../assets/pictures/professionsIcons/accountant.png';
+import nursing from '../../../assets/pictures/professionsIcons/nursing.jpg';
+import midwife from '../../../assets/pictures/professionsIcons/midwife.jpg';
+import pharmacy from '../../../assets/pictures/professionsIcons/pharmacy.jpg';
+import stom from '../../../assets/pictures/professionsIcons/denatTech.jpg';
+import accountant from '../../../assets/pictures/professionsIcons/accountant2.jpg';
+import designer from '../../../assets/pictures/professionsIcons/designer.jpg';
 import './ProfessionsSection.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 const ProfessionsSection = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   const professionsData = [
     {
       id: 0,
@@ -34,8 +37,7 @@ const ProfessionsSection = () => {
     {
       id: 4,
       name: t('designer'),
-      image: designer
-    },
+      image: designer    },
     {
       id: 5,
       name: t('accountant'),
@@ -49,13 +51,16 @@ const ProfessionsSection = () => {
       <div className="professions">
         {professionsData.map(({ id, name, image }) => {
           return (
-            <div className="profession" key={id}>
-              <img src={image} alt="Profession" />
+            <div
+              onClick={() => {
+                navigate('/Professions', { state: name });
+              }}
+              className="profession"
+              style={{ backgroundImage: `url(${image})` }}
+              key={id}>
               <div className="profession-content">
                 <h4>{name}</h4>
-                <Link to={'/Professions'}>
-                  <button>{t('More')}</button>
-                </Link>
+                <Link to={'/Professions'}>{t('More')}</Link>
               </div>
             </div>
           );

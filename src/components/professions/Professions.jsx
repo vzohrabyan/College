@@ -8,10 +8,12 @@ import designer from '../../assets/pictures/professions/designerPic.jpg';
 import midwife from '../../assets/pictures/professions/midwifePic.png';
 import pharmacy from '../../assets/pictures/professions/pharmacyPic.jpg';
 import stomTech from '../../assets/pictures/professions/stomTechPic.jpg';
+import { useLocation } from 'react-router-dom';
 
 const truncateHtml = (html, maxLength) => {
   const parser = new DOMParser();
   const doc = parser.parseFromString(html, 'text/html');
+  
 
   let textContent = doc.body.textContent || '';
 
@@ -29,9 +31,18 @@ const Professions = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 750);
   const [expandedItems, setExpandedItems] = useState({});
 
+  const location = useLocation();
+  const scrollToId = location.state || {};
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    if (scrollToId) {
+      const element = document.getElementById(scrollToId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [scrollToId]);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -72,7 +83,7 @@ const Professions = () => {
           const truncatedDescription = isMobile ? truncateHtml(description, 200) : description;
 
           return (
-            <div key={id} className="professions-descriptions-profession">
+            <div key={id} className="professions-descriptions-profession" id={name}>
               <div className="professions-descriptions-profession-desc">
                 <h1>{name}</h1>
                 <span

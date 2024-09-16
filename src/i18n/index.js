@@ -21,7 +21,7 @@ const resources = {
 i18n.use(initReactI18next).init({
   resources,
   lng: 'am',
-  debug: true,
+  debug: false, // Set to false to disable debug logs
   fallbackLng: 'en',
   interpolation: {
     escapeValue: false
