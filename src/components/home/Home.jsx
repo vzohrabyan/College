@@ -4,6 +4,7 @@ import ProfessionsSection from './professionsSection/ProfessionsSection.jsx';
 import AnimationSliders from './animationSlider/AnimationSliders.jsx';
 import './Home.scss';
 import QuestionsForm from './questionsForm/QuestionsForm.jsx';
+import NewsSection from './newsSection/NewsSection.jsx';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -19,6 +20,12 @@ const Home = () => {
         </div>
       </section>
       <ProfessionsSection />
+      <NewsSection />
+      <section className="collegeSection">
+        <div>
+          <p>{t('CollegeSection2')}</p>
+        </div>
+      </section>
       <QuestionsForm />
     </main>
   );

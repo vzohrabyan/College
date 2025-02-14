@@ -1,7 +1,7 @@
 .admission {
   &-slide {
     height: 100vh;
-    background-image: url("../../assets/pictures/slidesPic/Flying-books.jpg");
+    background-image: url("../../assets/pictures/slidesPic/AdmissionSlide.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,13 +16,16 @@
       right: 10%;
       font-size: 4.9rem;
       font-family: 'Noto Sans Armenian', sans-serif;
-      font-weight: 200;
+      font-weight: 500;
       -webkit-animation-duration: 0.5s;
       animation-duration: 1.5s;
       -webkit-animation-fill-mode: both;
       animation-fill-mode: both;
       animation-name: banner3header;
       animation-delay: 1.5s;
+      border-radius: 1rem;
+      background-color: rgba(14, 82, 90, 0.7);
+      padding: 0.5rem 2rem;
     }
   }
   &-section {
@@ -172,7 +175,12 @@
 @media screen and (max-width: 550px) {
   .admission {
     &-slide {
-      height: 50vh;
+      height: 60vh;
+      h1 {
+        font-size: 1.2rem !important;
+        letter-spacing: 0.15rem !important;
+        bottom: 8% !important;
+      }
     }
   }
 }

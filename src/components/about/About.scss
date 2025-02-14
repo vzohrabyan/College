@@ -1,58 +1,223 @@
 .about {
-  padding-top: 90vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  &-pic {
-    // position: relative;
+  background-color: rgb(237, 239, 247);
+  &-slide {
+    height: 100vh;
     width: 100%;
-    img {
-      border-radius: 100%;
-      background-color: white;
-      position: absolute;
-      top: -100%;
-      animation-timing-function: ease-in-out;
-    }
-
-    .pic1 {
-      width: 18rem;
-      left: 75%;
-      animation: slideDown1 4s forwards;
-    }
-
-    .pic2 {
-      width: 10rem;
-      left: 59%;
-      animation: slideDown2 2s forwards;
-    }
-
-    .pic3 {
-      width: 15rem;
-      left: 10%;
-      animation: slideDown3 3s forwards;
-    }
-
-    .pic4 {
-      width: 20rem;
-      left: 43%;
-      transform: translateX(-50%);
-      animation: slideDown4 7s forwards;
-    }
-  }
-
-  &-main {
-    max-width: 1500px;
+    background-image: url('../../assets/pictures/slidesPic/AboutUs.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
-    z-index: 1;
-    margin: 5rem 0;
-    border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: rgb(19, 19, 50) solid 4px;
-    overflow: hidden;
+    h1 {
+      position: absolute;
+      bottom: 22%;
+      right: 10%;
+      border-radius: 1rem;
+      padding: 0.5rem 2rem;
+      background-color: rgba(51, 2, 51, 0.7);
+      font-size: 3.9rem;
+      font-family: 'Noto Sans Armenian', sans-serif;
+      font-weight: 500;
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 1.5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-name: banner3header;
+      animation-delay: 1.5s;
+      color: white;
+    }
+  }
+  &-main {
+    max-width: 1500px;
+    margin: auto;
+    border-bottom: 3px solid rgb(61, 75, 133);
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+    &-1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      width: 100%;
+      padding: 2.5rem 0;
+      &-section {
+        width: 40% !important;
+        border-top: 2px solid rgb(61, 75, 133);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      &-pic {
+        width: 454px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(61, 75, 133);
+        border-radius: 50% 40% 60% 30% / 50% 50% 60% 40%;
+        border: 1px solid;
+        position: relative;
+        &-picture {
+          position: absolute;
+          top: 6%;
+          left: 11%;
+          height: 50vh;
+          width: 50vh;
+          background-image: url('../../assets/icons/logo.png');
+          transform: rotate(-18deg);
+          background-size: cover;
+        }
+
+      }
+    }
+    &-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      width: 100%;
+      padding: 2.5rem 0;
+      &-section {
+        width: 40% !important;
+        border-top: 2px solid rgb(61, 75, 133);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      &-pic {
+        width: 454px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(61, 75, 133);
+        border-radius: 50% 40% 60% 30% / 50% 50% 60% 40%;
+        border: 1px solid;
+        position: relative;
+        
+        &-picture {
+          position: absolute;
+          top: 6%;
+          left: 10%;
+          height: 50vh;
+          width: 50vh;
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          background-image: url('../../assets/pictures/aboutUs/Pic4.jpg');
+          transform: rotate(-18deg);
+          background-size: cover;
+        }
+
+      }
+    }
+    &-3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      width: 100%;
+      padding: 2.5rem 0;
+      &-section {
+        width: 40% !important;
+        border-top: 2px solid rgb(61, 75, 133);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      &-pic {
+        width: 454px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        // background-color: rgb(102, 123, 208);
+        background-color: rgb(61, 75, 133);
+        border-radius: 50% 40% 60% 30% / 50% 50% 60% 40%;
+        border: 1px solid;
+        position: relative;
+        &-picture {
+          position: absolute;
+          top: 6%;
+          left: 10%;
+          height: 50vh;
+          width: 50vh;
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          background-image: url('../../assets/pictures/aboutUs/Pic3.jpg');
+          transform: rotate(-18deg);
+          background-size: cover;
+        }
+
+      }
+    }
+    
+    &-4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem;
+      width: 100%;
+      padding: 2.5rem 0;
+      &-section {
+        width: 40% !important;
+        border-top: 2px solid rgb(61, 75, 133);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      &-pic {
+        width: 454px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(61, 75, 133);
+        border-radius: 50% 40% 60% 30% / 50% 50% 60% 40%;
+        border: 1px solid;
+        position: relative;
+        &-picture {
+          position: absolute;
+          top: 6%;
+          left: 10%;
+          height: 50vh;
+          width: 50vh;
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          background-image: url('../../assets/pictures/aboutUs/Pic2.jpg');
+          transform: rotate(-18deg);
+          background-size: cover;
+        }
+
+      }
+    }
+    b {
+      color: rgb(61, 75, 133);
+      font-family: 'Montserrat', sans-serif;
+    }
+    button {
+      height: 50px;
+      width: 200px;
+      border: none;
+      border-radius: 12px;
+      text-align: center;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(102, 123, 208);
+      cursor: pointer;
+    }
+    .line {
+      position: absolute;
+      bottom: 7%;
+      right: 0%;
+    }
+    .star {
+      position: absolute;
+      top: 0;
+      left: 7%;
+    }
+    .frame {
+      position: absolute;
+      right: 25%;
+      top: 2%;
+    }
     h1 {
       background-color: rgb(19, 19, 50);
       width: 100%;
@@ -72,270 +237,93 @@
   }
 }
 
-@keyframes slideDown1 {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 19%;
-  }
-}
-
-@keyframes slideDown2 {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 18%;
-  }
-}
-
-@keyframes slideDown3 {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 22%;
-  }
-}
-
-@keyframes slideDown4 {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 17%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .about {
-    padding-top: 80vh !important;
-  }
-  .pic1 {
-    width: 12rem !important;
-    left: 75%;
-    animation: slideDown1 4s forwards;
-  }
-
-  .pic2 {
-    width: 10rem;
-    left: 55% !important;
-    animation: slideDown2 6s forwards;
-  }
-
-  .pic3 {
-    width: 12rem !important;
-    left: 1% !important;
-    animation: slideDown3 5s forwards;
-  }
-
-  .pic4 {
-    width: 14rem !important;
-    left: 40% !important;
-    transform: translateX(-50%);
-    animation: slideDown4 7s forwards;
-  }
-  @keyframes slideDown1 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 15%;
-    }
-  }
-
-  @keyframes slideDown2 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 20%;
-    }
-  }
-
-  @keyframes slideDown3 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 18%;
-    }
-  }
-
-  @keyframes slideDown4 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 16%;
+    &-main-1-pic-picture, &-main-2-pic-picture, &-main-3-pic-picture, &-main-4-pic-picture {
+      width: 400px !important;
+      height: 400px !important;
     }
   }
 }
-
-@media screen and (max-width: 800px) {
-  .about-main {
-    h1 {
-      font-size: 1.9rem !important;
-    }
-  }
-  .pic1 {
-    width: 12rem !important;
-    left: 65% !important;
-    animation: slideDown1 4s forwards;
-  }
-
-  .pic2 {
-    width: 10rem;
-    left: 40% !important;
-    animation: slideDown2 6s forwards;
-  }
-
-  .pic3 {
-    width: 15rem;
-    left: 1% !important;
-    animation: slideDown3 5s forwards;
-  }
-
-  .pic4 {
-    width: 14rem !important;
-    left: 45% !important;
-    transform: translateX(-50%);
-    animation: slideDown4 7s forwards;
-  }
-  @keyframes slideDown1 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 12%;
-    }
-  }
-
-  @keyframes slideDown2 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 7%;
-    }
-  }
-
-  @keyframes slideDown3 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 8%;
-    }
-  }
-
-  @keyframes slideDown4 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 13%;
-    }
-  }
-}
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1100px) {
   .about {
-    padding-top: 500px !important;
-    background-color: white;
-  }
-  .about-main {
-    margin: 0rem 0.1rem 3rem 0.1rem;
-    h1 {
-      font-size: 1.9rem !important;
-      animation: aboutHead 4s forwards;
-    }
-    span {
-      font-size: 1.2rem !important;
-      padding: 1rem;
-      animation: aboutSpan 2s forwards;
-    }
-  }
-  .pic1 {
-    width: 7rem !important;
-    left: 65% !important;
-    animation: slideDown1 5s forwards !important;
-  }
-
-  .pic2 {
-    width: 8rem !important;
-    left: 45% !important;
-    animation: slideDown2 3s forwards !important;
-  }
-
-  .pic3 {
-    width: 8rem !important;
-    left: 5% !important;
-    animation: slideDown3 4s forwards !important;
-  }
-
-  .pic4 {
-    width: 11rem !important;
-    left: 40% !important;
-    transform: translateX(-50%);
-    animation: slideDown4 2s forwards !important;
-  }
-  @keyframes aboutSpan {
-    from {
-      opacity: 0;
-      transform: translate3d(60%, 0, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0%, 0);
-    }
-  }
-
-  @keyframes aboutHead {
-    from {
-      opacity: 0;
-      transform: translate3d(-60%, 0, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0%, 0);
-    }
-  }
-
-  @keyframes slideDown1 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 7.5%;
-    }
-  }
-
-  @keyframes slideDown2 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 4%;
-    }
-  }
-
-  @keyframes slideDown3 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 4%;
-    }
-  }
-
-  @keyframes slideDown4 {
-    0% {
-      top: -100%;
-    }
-    100% {
-      top: 8%;
+    &-slide {
+      height: 45vh;
+      h1 {
+        font-size: 1.5rem !important;
+        bottom: 4% !important;
+      }
     }
   }
 }
+@media screen and (max-width: 900px) {
+  .about {
+    &-slide {
+      height: 60vh !important;
+      h1 {
+        font-size: 1.2rem !important;
+        letter-spacing: 0.15rem !important;
+        bottom: 8% !important;
+      }
+    }
+
+    &-main {
+      padding: 2rem 1rem; /* Added padding for better spacing */
+      
+      &-1, &-2, &-3, &-4 {
+        flex-direction: column;
+        padding: 1.5rem 0;
+        &-section {
+          width: 100% !important;
+          border-top: 1px solid rgb(61, 75, 133);
+          padding: 1.5rem 0;
+          display: flex;
+          align-items: center;
+        }
+
+        &-pic {
+          width: 354px;
+          height: 350px; /* Reduced height for responsiveness */
+          margin: 1rem 0;
+          &-picture {
+            height: 300px;
+            width: 300px;
+            left: 8%;
+          }
+        }
+      }
+      &-1, &-3 {
+        flex-direction: column-reverse;
+      }
+      button {
+        height: 45px;
+        width: 180px;
+        font-size: 1rem;
+      }
+
+      .line {
+        bottom: 2%;
+        right: 0%;
+      }
+
+      .star {
+        top: -4%;
+        left: 5%;
+      }
+
+      .frame {
+        right: 20%;
+        top: -4%;
+      }
+
+      
+
+      span {
+        padding: 1.5rem;
+        font-size: 1.125rem; /* Reduced font size */
+        line-height: 1.8rem;
+      }
+    }
+  }
+}
+
