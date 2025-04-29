@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="contact">
           <FaPhone />
           <a style={{ textDecoration: 'none' }} href="tel:+37498127317">
-            +374 ( 98 ) 127 - 317
+            +374 ( 94 ) 440 - 242
           </a>
           <a style={{ textDecoration: 'none' }} href="tel:+37494130602">
             {' '}

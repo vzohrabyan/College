@@ -22,6 +22,7 @@ const Admission = () => {
           <span dangerouslySetInnerHTML={{ __html: t('admissionMain') }} />
         </div>
       </div>
+      <AdmissionForm/>
       <div className="admission-doc">
         <h2>{t('necessaryDocuments')}</h2>
         <div className="admission-doc-1">
@@ -49,7 +50,6 @@ const Admission = () => {
           </div>
         </div>
       </div>
-      <AdmissionForm />
     </main>
   );
 };
