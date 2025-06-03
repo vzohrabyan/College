@@ -55,5 +55,15 @@
   "main": "Main",
   "successMessage": "Your application has been successfully submitted. We will contact you after reviewing your application.",
   "news": "News",
-  "CollegeSection2": "At our college, we foster a unique environment where every student is valued, and a sense of belonging is at the heart of our community. Our students are not just individuals pursuing their academic goals—they are part of a close-knit family that supports and uplifts each other. The positive energy that flows through our campus creates a dynamic atmosphere where collaboration, friendship, and personal growth thrive. We believe in nurturing the whole person, providing not just academic excellence but a network of support that encourages success, both in and outside the classroom. Here, every student is empowered to reach their full potential, knowing they are surrounded by a community that truly cares."
+  "CollegeSection2": "At our college, we foster a unique environment where every student is valued, and a sense of belonging is at the heart of our community. Our students are not just individuals pursuing their academic goals—they are part of a close-knit family that supports and uplifts each other. The positive energy that flows through our campus creates a dynamic atmosphere where collaboration, friendship, and personal growth thrive. We believe in nurturing the whole person, providing not just academic excellence but a network of support that encourages success, both in and outside the classroom. Here, every student is empowered to reach their full potential, knowing they are surrounded by a community that truly cares.",
+  "admissionExams": "Admission Exam Questionnaires and Samples",
+  "anatomy": "Anatomy",
+  "chemistry": "Chemistry",
+  "math": "Mathematics",
+  "hajoc": "Armenian language",
+  "download": "Download",
+  "dictation": "Dictation",
+  "Drawing": "Drawing",
+  "Interview": "Interview",
+  "test": "тест"
 }

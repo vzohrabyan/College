@@ -3,21 +3,22 @@
   &-slide {
     height: 100vh;
     width: 100%;
-    background-image: url('../../assets/pictures/slidesPic/AboutUs.jpg');
+    background-color: rgb(61, 75, 133);
+    background-image: url('../../assets/pictures/slidesPic/AboutUs.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     h1 {
       position: absolute;
-      bottom: 22%;
-      right: 10%;
+      bottom: 12%;
+      right: 15%;
       border-radius: 1rem;
       padding: 0.5rem 2rem;
-      background-color: rgba(51, 2, 51, 0.7);
+      background-color: rgba(61, 75, 239, 0.7);
       font-size: 3.9rem;
       font-family: 'Noto Sans Armenian', sans-serif;
       font-weight: 500;
@@ -259,11 +260,14 @@
 @media screen and (max-width: 900px) {
   .about {
     &-slide {
-      height: 60vh !important;
+      height: 46vh !important;
+      background-position:bottom;
       h1 {
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
         letter-spacing: 0.15rem !important;
-        bottom: 8% !important;
+        bottom: 5% !important;
+        right: 5% !important;
+        padding: 7px 15px !important;
       }
     }
 

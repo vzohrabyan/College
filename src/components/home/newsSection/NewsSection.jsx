@@ -3,9 +3,11 @@ import './NewsSection.scss'; // Assuming your styles are in App.css
 import vid1 from '../../../assets/pictures/news/IMG1.mp4';
 import vid2 from '../../../assets/pictures/news/IMG2.MOV';
 import vid3 from '../../../assets/pictures/news/IMG3.mp4';
+import vid4 from '../../../assets/pictures/news/IMG4.mp4';
 import addmision from '../../../assets/pictures/news/addmision.jpg';
 import pic from '../../../assets/pictures/aboutUs/Pic2.jpg';
 import pic1 from '../../../assets/pictures/news/pic1.jpg';
+import pic2 from '../../../assets/pictures/aboutUs/Pic3.jpg';
 import { FaRegCirclePlay } from 'react-icons/fa6';
 import { IoClose } from 'react-icons/io5';
 import { useTranslation } from 'react-i18next';
@@ -40,6 +42,19 @@ const NewsSection = () => {
       heading: 'Կրթությունը սկսվում է կարգից',
       date: '27.04.2025',
       text: 'Կան բաներ, որոնք պարզապես հաճելի են աչքին։ Մաքուր շարքեր, դասավորվածություն, հավասարակշռություն։ Այս ամենը մի նպատակ ունի՝ ապահովել որակյալ կրթություն ապագա մասնագետների համար։ Ա. ՍԵԲԱՍՏԱՑԻ ԲԺՇԿԱԿԱՆ ՔՈԼԵՋ՝ որտեղ կրթությունը սկսվում է կարգից։'
+    },
+    {
+      id: 3,
+      video: vid4,
+      picture: pic2,
+      heading: 'Սա պարզապես կրթություն չէ — սա ապագա է։',
+      date: '26.05.2025',
+      text: `🎓 «Ա. Սեբաստացու անվան բժշկական քոլեջ» կրթական հիմնադրամում
+      Մենք սովորում ենք՝
+      📚 Հստակ գիտելիքով,
+      💉 Գործնական հմտություններով,
+      🤝 Թիմային աշխատանքով։
+      Սա պարզապես կրթություն չէ — սա ապագա է։`
     },
   ];
 
