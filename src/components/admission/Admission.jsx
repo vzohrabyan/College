@@ -93,10 +93,10 @@ const Admission = () => {
             <h2>{t("stom")}</h2>
             <div className="admissionExamsSubject">
               <a href={chemistryS} target="_blank" rel="noopener noreferrer">
-                <h5>{t("chemistry")}</h5>
+                <h5>{t("anatomy")}</h5>
                 <FaFileDownload />
               </a>
-                <span>{t("test")}</span>
+                <span>{t("Interview")}</span>
             </div>
             <div className="admissionExamsSubject">
               <h5>{t("hajoc")}</h5>
