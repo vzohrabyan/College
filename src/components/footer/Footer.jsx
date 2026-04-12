@@ -5,6 +5,7 @@ import { FaPhone } from 'react-icons/fa6';
 import { FaViber } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { FaLocationDot } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
 import logo from '../../assets/icons/logo.png';
 import './Footer.scss';
 import { Link } from 'react-router-dom';
@@ -39,6 +40,12 @@ const Footer = () => {
         <div className="loc">
           <FaLocationDot className="small" />
           <span>{t('location')}</span>
+        </div>
+        <div className="contact">
+          <MdEmail />
+          <a style={{ textDecoration: 'none' }} href="mailto:collegesebastatsi@gmail.com">
+            collegesebastatsi@gmail.com
+          </a>
         </div>
         <div className="sites">
           <Link to="https://www.instagram.com/a.sebastatsi/" target="_blank">
