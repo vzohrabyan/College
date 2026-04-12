@@ -2,8 +2,6 @@ import React from 'react';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa6';
-import { FaViber } from 'react-icons/fa';
-import { IoLogoWhatsapp } from 'react-icons/io';
 import { FaLocationDot } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import logo from '../../assets/icons/logo.png';

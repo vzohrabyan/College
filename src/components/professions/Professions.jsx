@@ -32,16 +32,16 @@ const Professions = () => {
   const [expandedItems, setExpandedItems] = useState({});
 
   const location = useLocation();
-  const scrollToId = location.state || {};
 
   useEffect(() => {
+    const scrollToId = location.state || {};
     if (scrollToId) {
       const element = document.getElementById(scrollToId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
-  }, [scrollToId]);
+  }, [location.state]);
 
 
   useEffect(() => {

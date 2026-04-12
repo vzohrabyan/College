@@ -5,14 +5,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+
 import Slide1Pic from '../../../assets/pictures/slidesPic/slide1.png';
 import Slide2Pic from '../../../assets/pictures/slidesPic/slide2.png';
 import Slide3Pic from '../../../assets/pictures/slidesPic/slide3.jpg';
 import Slide4Pic from '../../../assets/pictures/slidesPic/slide4.jpg';
 const AnimationSliders = () => {
-  const { t } = useTranslation();
   const animationSlidesData = [
     {
       id: 1,

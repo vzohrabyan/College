@@ -45,7 +45,7 @@ const Header = () => {
         <div className="collegeName right">
           <h1>
             {headerRef.current ? (
-              headerRef.current.className == 'initialHeader' ? (
+              headerRef.current.className === 'initialHeader' ? (
                 'A. SEBASTATSI MEDICAL COLLEGE'
               ) : (
                 <>

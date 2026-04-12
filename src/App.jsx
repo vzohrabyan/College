@@ -1,5 +1,3 @@
-import { Provider } from 'react-redux';
-
 import AppRoutes from './router/AppRoutes';
 import ScrollToTop from './components/scrollTop/ScrollTop';
 import './App.scss';
